@@ -46,10 +46,10 @@ namespace Game10003
             float SidewaysLocation = Input.GetMouseX();
             float PlayerLocation = Input.GetMouseY();
             PlayerModel();
-            Input.IsMouseButtonDown(0);
-            if (Input.IsMouseButtonDown(0) = true)
+            bool Fire = Input.IsMouseButtonDown(0);
+            if (Fire = true)
             {
-                
+                Draw
             }
             //set up player model (triange and rectoangle)
             // set up enemy model (circle that changes size with every itteration)
