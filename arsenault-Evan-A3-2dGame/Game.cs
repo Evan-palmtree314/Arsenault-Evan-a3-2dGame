@@ -33,18 +33,24 @@ namespace Game10003
         /// <summary>
         ///  makes a player model for the rest of the code to interact with
         /// </summary>
-        public void PlayerModel(float a , float b, float c, float d, float e, float f)
+        public void PlayerModel()
         {
 
             // STATIC VER- Draw.Triangle(100,50,100,150,200,100);
-            Draw.Triangle(a, b, c, d, e, f);
+            Draw.Circle(100, Input.GetMouseY(), 50);
 
         }
         public void Update()
         {
             Window.ClearBackground(color: Color.White); //CHANGE COLOUR LATER ON
-            
-            
+            float SidewaysLocation = Input.GetMouseX();
+            float PlayerLocation = Input.GetMouseY();
+            PlayerModel();
+            Input.IsMouseButtonDown(0);
+            if (Input.IsMouseButtonDown(0) = true)
+            {
+                
+            }
             //set up player model (triange and rectoangle)
             // set up enemy model (circle that changes size with every itteration)
             // move player based on mouses y movement but oomit the x to keep it on a virtical axis only moving up and down
